@@ -6,10 +6,10 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * @author wujj
+ * @author wangjun
  * @version 1.0
  * @Description:
- * @date 2018年05月08日 16:21
+ * @date 2022-03-27
  */
 public class CrossFilter implements Filter {
     @Override

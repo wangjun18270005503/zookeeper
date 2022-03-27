@@ -5,7 +5,7 @@ package com.example.zookeeper_demo.entity;/**
  */
 
 /**
- * @author 15961
+ * @author wangjun
  * @create 2022-03-23
  * @desc 用户表
  **/
