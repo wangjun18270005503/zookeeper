@@ -1,0 +1,49 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/tc_project?autoReconnect=true&useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&useSSL=false
+    username: root
+    password: 159611
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      filters: stat
+      maxActive: 20
+      initialSize: 1
+      maxWait: 60000
+      minIdle: 1
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: select 'x'
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      poolPreparedStatements: true
+      maxOpenPreparedStatements: 20
+  data:
+    redis:
+      repositories:
+        enabled: false
+  servlet:
+    multipart:
+      maxFileSize: 10MB
+      maxRequestSize: 10MB
+#redis 配置
+#    redis:
+#      database: 2
+#      host: 10.50.207.215
+#      port: 6379
+#      password: sx123456
+  resources:
+    static-locations:
+  main:
+    allow-bean-definition-overriding: true
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: uuid
+      field-strategy: not_null
+    refresh: true
+  configuration:
+    map-underscore-to-camel-case: false
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #生产环境需要注释,否则查询sql无法生成到log文件
+  mapper-locations: classpath:/com/example/zookeeper_demo/mapper/*.xml

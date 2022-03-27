@@ -1,0 +1,15 @@
+server:
+  port: 8080
+logging:
+  config: classpath:logback-spring.xml
+spring:
+  profiles:
+    active: @spring.active@
+  application:
+    name: zookeeperdemo
+async:
+  executor:
+    thread:
+      core_pool_size: 10
+      max_pool_size: 30
+      queue_capacity: 8
