@@ -1,4 +1,4 @@
-package com.example.zookeeper_demo;
+package com.example.zookeeper;
 
 import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;

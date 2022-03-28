@@ -1,12 +1,12 @@
-package com.example.zookeeper_demo.service.Impl;/**
+package com.example.zookeeper.service.Impl;/**
  * @author wj
  * @date 2022/3/23
  * @version 1.0
  */
 
-import com.example.zookeeper_demo.dao.UserDao;
-import com.example.zookeeper_demo.entity.User;
-import com.example.zookeeper_demo.service.UserService;
+import com.example.zookeeper.dao.UserDao;
+import com.example.zookeeper.entity.User;
+import com.example.zookeeper.service.UserService;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -19,7 +19,7 @@ import java.util.List;
  * @desc 用户_serviceImpl
  **/
 @Service  //标识这个bean是service层的，并交给spring容器管理
-@MapperScan("com.example.zookeeper_demo.dao")
+@MapperScan("com.example.zookeeper.dao")
 public class UserServiceImpl implements UserService {
     @Autowired
     private UserDao userDao;

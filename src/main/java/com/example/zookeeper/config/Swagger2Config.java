@@ -1,4 +1,4 @@
-package com.example.zookeeper_demo.config;/**
+package com.example.zookeeper.config;/**
  * @author wj
  * @date 2022/3/23
  * @version 1.0
@@ -33,7 +33,7 @@ public class Swagger2Config {
                 .groupName("Zookeeper")
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.example.zookeeper_demo.controller"))// com包下所有API都交给Swagger2管理
+                .apis(RequestHandlerSelectors.basePackage("com.example.zookeeper.controller"))// com包下所有API都交给Swagger2管理
                 .paths(PathSelectors.any()).build();
     }
 

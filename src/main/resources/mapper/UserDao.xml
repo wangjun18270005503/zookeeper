@@ -2,14 +2,14 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.example.zookeeper_demo.dao.UserDao">
+<mapper namespace="com.example.zookeeper.dao.UserDao">
     <!--//添加UserDao的命名空间，引入UserDao-->
-    <select id="queryUser" resultType="com.example.zookeeper_demo.entity.User">
+    <select id="queryUser" resultType="com.example.zookeeper.entity.User">
         SELECT user_id, user_name, age
         FROM tb_user
     </select>
 
-    <select id="queryUserById" resultType="com.example.zookeeper_demo.entity.User">
+    <select id="queryUserById" resultType="com.example.zookeeper.entity.User">
         SELECT user_id, user_name, age
         FROM tb_user
         WHERE
@@ -17,14 +17,14 @@
     </select>
 
     <insert id="insertUser" useGeneratedKeys="true" keyProperty="userId"
-            keyColumn="userId" parameterType="com.example.zookeeper_demo.entity.User">
+            keyColumn="userId" parameterType="com.example.zookeeper.entity.User">
         INSERT INTO
             tb_user(user_name, age)
         VALUES
             (#{userName},#{age})
     </insert>
 
-    <update id="updateUser" parameterType="com.example.zookeeper_demo.entity.User">
+    <update id="updateUser" parameterType="com.example.zookeeper.entity.User">
         update tb_user
         <set>
             <if test="userName != null">user_name=#{userName},</if>

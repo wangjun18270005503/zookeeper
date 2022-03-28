@@ -1,4 +1,4 @@
-package com.example.zookeeper_demo.config;
+package com.example.zookeeper.config;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;

@@ -1,6 +1,6 @@
-package com.example.zookeeper_demo;
+package com.example.zookeeper;
 
-import com.example.zookeeper_demo.config.CrossFilter;
+import com.example.zookeeper.config.CrossFilter;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -14,13 +14,13 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 @EnableScheduling
 @EnableAsync
-@MapperScan(basePackages = {"com.example.zookeeper_demo.mapper"})
+@MapperScan(basePackages = {"com.example.zookeeper.mapper"})
 @SpringBootApplication(exclude={DataSourceAutoConfiguration.class, HibernateJpaAutoConfiguration.class})
-public class ZookeeperDemoApplication {
+public class ZookeeperApplication {
 
     public static void main(String[] args) {
 
-        SpringApplication.run(ZookeeperDemoApplication.class, args);
+        SpringApplication.run(ZookeeperApplication.class, args);
     }
 
     @Bean

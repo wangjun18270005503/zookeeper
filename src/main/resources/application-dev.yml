@@ -46,4 +46,4 @@ mybatis-plus:
   configuration:
     map-underscore-to-camel-case: false
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #生产环境需要注释,否则查询sql无法生成到log文件
-  mapper-locations: classpath:/com/example/zookeeper_demo/mapper/*.xml
+  mapper-locations: classpath:/com/example/zookeeper/mapper/*.xml

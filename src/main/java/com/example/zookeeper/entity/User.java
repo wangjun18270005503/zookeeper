@@ -1,4 +1,4 @@
-package com.example.zookeeper_demo.entity;/**
+package com.example.zookeeper.entity;/**
  * @author wj
  * @date 2022/3/23
  * @version 1.0

@@ -10,9 +10,9 @@
     </parent>
 
     <groupId>com.example</groupId>
-    <artifactId>zookeeper_demo</artifactId>
+    <artifactId>zookeeper</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>zookeeper_demo</name>
+    <name>zookeeper</name>
     <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>1.8</java.version>

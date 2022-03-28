@@ -1,10 +1,10 @@
-package com.example.zookeeper_demo.service;/**
+package com.example.zookeeper.service;/**
  * @author wj
  * @date 2022/3/23
  * @version 1.0
  */
 
-import com.example.zookeeper_demo.entity.User;
+import com.example.zookeeper.entity.User;
 
 import java.util.List;
 
