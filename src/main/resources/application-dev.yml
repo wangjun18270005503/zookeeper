@@ -50,5 +50,10 @@ mybatis-plus:
 
 #zookeeper 配置
 zookeeper:
-  address: 124.222.181.186:2181,124.222.181.186:2182,124.222.181.186:2183,124.222.181.186:2184
-  timeout: 10000
+  curator:
+    ip: 124.222.181.186:2181,124.222.181.186:2182,124.222.181.186:2183,124.222.181.186:2184
+    sessionTimeOut: 50000
+    sleepMsBetweenRetry: 1000
+    maxRetries: 3
+    namespace: zookeeper_demo
+    connectionTimeoutMs: 50000
